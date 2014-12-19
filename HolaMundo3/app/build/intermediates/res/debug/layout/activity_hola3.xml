@@ -1,0 +1,93 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/miLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="@string/saludo"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/miTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/escribe"
+        android:layout_column="0" />
+
+    <Button
+        android:id="@+id/miBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pulsar" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opRojo"
+            android:id="@+id/op1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opAzul"
+            android:id="@+id/op2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opVerde"
+            android:id="@+id/op3"/>
+    </RadioGroup>
+
+    <Button
+        android:text="@string/btAceptar"
+        android:id="@+id/btAceptar"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/miBtn1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/boton1"
+        android:background="#ff0000"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/miBtn2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/boton2"
+        android:onClick="miClick"
+        android:background="#0101df"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/miBtn3"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/boton3"
+        android:background="#01df01"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:text=""
+        android:id="@+id/tvColores"/>
+</LinearLayout>
+
+<!-- From: file:/home/pepe/Google%20Drive/2ºDAM/PMM/Proyectos%20Android/HolaMundo3/app/src/main/res/layout/activity_hola3.xml -->

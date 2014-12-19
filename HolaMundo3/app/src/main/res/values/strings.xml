@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HolaMundo3</string>
+    <string name="app2_name">Pantalla Saludo</string>
+
+    <string name="saludo">Prueba de Saludo!</string>
+    <string name="escribe">Introduce TU NOMBRE</string>
+    <string name="pulsar">Pulsa Aqui</string>
+    <string name="volver">VOLVER Actividad Anterior</string>
+
+    <string name="boton1">Rojo</string>
+    <string name="boton2">Azul</string>
+    <string name="boton3">Verde</string>
+
+    <string name="opRojo">Rojo</string>
+    <string name="opAzul">Azul</string>
+    <string name="opVerde">Verde</string>
+
+    <string name="btAceptar">Aceptar</string>
+
+
+    <string name="action_settings">Settings</string>
+
+</resources>
