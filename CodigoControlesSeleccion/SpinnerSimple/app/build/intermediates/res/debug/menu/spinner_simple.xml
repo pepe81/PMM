@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SpinnerSimple" >
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>
+<!-- From: file:/home/pepe/Google%20Drive/2ºDAM/PMM/CodigoControlesSeleccion/SpinnerSimple/app/src/main/res/menu/spinner_simple.xml -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DibujosAreas</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_areas">Areas</string>
+    <string name="action_trazos">Trazos</string>
+
+    <string-array name="formas">
+        <item>""</item>
+        <item>Círculo</item>
+        <item>Rectángulo</item>
+    </string-array>
+
+    <string name="title_activity_activity_circulo">ActivityCirculo</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity_rectangulo">ActivityRectangulo</string>
+
+</resources>

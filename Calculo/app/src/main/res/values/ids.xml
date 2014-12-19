@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tvSaldo" type="id">saldo</item>
+    <item name="tvValor" type="id">valor</item>
+</resources>

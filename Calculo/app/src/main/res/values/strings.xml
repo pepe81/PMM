@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cálculo puja máxima</string>
+    <string name="app_name2">Resultado</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">About</string>
+    <string name="title_activity_my_activity2">MyActivity2</string>
+
+</resources>
