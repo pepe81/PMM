@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">pruebaMenu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="action_compartir">Compartir</string>
+    <string name="action_about">Info</string>
+    <string name="subMenu">SubMenu</string>
+
+</resources>
