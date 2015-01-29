@@ -46,9 +46,9 @@ public class DbManager
     {
         db.execSQL("insert into "+TABLE_NAME+" values (null,'"+nombre+"','"+telefono+"');");
     }
-    public void eliminar (String id)
+    public void eliminar (String nombre)
     {
-        db.delete(TABLE_NAME,CN_ID+"=?",new String[]{id});
+        db.delete(TABLE_NAME,CN_NAME+"=?",new String[]{nombre});
     }
     public void eliminarMultiple (String id1,String id2)
     {

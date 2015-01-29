@@ -6,6 +6,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
@@ -16,6 +19,8 @@ public class MainActivity extends ActionBarActivity
     private Cursor cursor;
     private ListView lista;
     SimpleCursorAdapter adapter;
+    EditText edNombre,edTelf;
+    Button btGuardar,btBuscar,btListar,btBorrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -24,18 +29,57 @@ public class MainActivity extends ActionBarActivity
         setContentView(R.layout.activity_main);
 
         dbManager = new DbManager(this);
+
         lista = (ListView)findViewById(R.id.listView);
 
-        dbManager.insertar("Pepe","635552884");
-        dbManager.insertar("Juan","123456789");
+        edNombre = (EditText)findViewById(R.id.edNombre);
+        edTelf = (EditText)findViewById(R.id.edTelf);
 
-        String[] from = new String[]{dbManager.CN_NAME,dbManager.CN_PHONE};
-        int[] to = new int[]{android.R.id.text1,android.R.id.text2};
+        btGuardar = (Button)findViewById(R.id.btGuardar);
+        btBuscar = (Button)findViewById(R.id.btBuscar);
+        btBorrar = (Button)findViewById(R.id.btBorrar);
+        btListar = (Button)findViewById(R.id.btListar);
+
+
+        btBuscar.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Cursor buscar = dbManager.buscarContacto(edNombre.getText().toString());
+                adapter.changeCursor(buscar);
+            }
+        });
+        btGuardar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                dbManager.insertar(edNombre.getText().toString(),edTelf.getText().toString());
+            }
+        });
+
+        btBorrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                dbManager.eliminar(edNombre.getText().toString());
+            }
+        });
+
+        final String[] from = new String[]{dbManager.CN_NAME,dbManager.CN_PHONE};
+        final int[] to = new int[]{android.R.id.text1,android.R.id.text2};
 
         cursor = dbManager.cargarCursorContactos();
         adapter = new SimpleCursorAdapter(this,android.R.layout.two_line_list_item,cursor,from,to,0);
 
-        lista.setAdapter(adapter);
+        btListar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+
+                lista.setAdapter(adapter);
+            }
+        });
     }
 
 
