@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RapidoVeloz</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_grabar">Insertar en BD</string>
+    <string name="action_dibujar">Estado Envio</string>
+    <string name="action_settings">Version</string>
+    <string name="action_principal">Volver a inicio</string>
+    <string name="title_activity_main_activity2">Factura</string>
+    <string name="title_activity_dibujar">Estado Envio</string>
+    <string name="title_activity_listar_bd">ListarBd</string>
+
+</resources>
